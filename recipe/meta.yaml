@@ -1,5 +1,5 @@
 {% set name = "pykerr" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pykerr-{{ version }}.tar.gz
-  sha256: b1c1bfe3f22dd74cb2e08c80ed474aba56b29e3f27b7bdc71db8f7100fd8da3e
+  sha256: af5911697ccaa40b4abeb1d5920e7007bea0d123d18639403924aaba98ec954c
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
